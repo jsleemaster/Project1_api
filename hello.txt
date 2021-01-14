@@ -1,1 +1,21 @@
-asdf
+hello 깃 허브 연습 완료
+
+1.https://git-scm.com/downloads
+설치
+2.https://github.com/jsleemaster/2021portfolio\
+git clone https://github.com/jsleemaster/2021portfolio 을 이용해 프로젝트를 생성
+
+3.cd 를 이용하여 디렉토리로 이동
+
+4.git status 명령어를 이용해 파일을 확인한다
+
+5." git add 파일명.확장자" 를 입력하여 추가 후 git status를 이용하여 확인
+
+6.git commit -m "Add 파일명.확장자" 를 이용하여 추가
+ 6-1 혹시 이메일config가 안된다면 git config --global user.email "자신의 이메일" 과 git config --global user.name "깃닉네임" 을 입력해준다
+
+7. git remote add orgin https://github.com/jsleemaster/2021portfolio.git 을 입력한다
+ 7-1 error : remote origin already exists 발생 시 git remote rm origin 을 입력후 다시 추가한다
+
+8.git push 입력 
+ 8-1. The current branch main has no upstream branch. 오류 발생 시 git push --set-upstream origin main 를 입력하여 해결
