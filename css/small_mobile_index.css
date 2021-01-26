@@ -1,0 +1,298 @@
+@media screen and (max-width: 375px){
+    /*mobile small*/
+    body,html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #start_back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    #start_main{
+        position: absolute;
+        left: 5%;
+        top: 40%;
+        width: 100%;
+        height: 100%;
+        font-size: 3.4em;
+    }
+    #main{
+        width: 100%;
+        height: 100%;
+    }
+    #mainbackground.size{
+        width: 100%;
+        height: 100%;
+    }
+    #smlee{
+        left: 30%;
+        top: 30%;
+        width: 40%;
+        height: auto;
+    }
+    #imgmain2,#imgmain3{
+        left: 30%;
+        top: 30%;
+        width: 42.66666666666667%;
+        height: 160px;
+    }
+    #mainclick{
+        left: 10%;
+        top: 26%;
+        font-size: 1.5em;
+    }
+    #smlee.about{
+        left: 68%;
+        top: 5%;
+        width: 28%;
+        height: auto;
+    }
+    #smlee.contact{
+        display: none;
+    }
+    #navClock{
+        display: none;
+    }
+    #nav_back{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        font-size: 0.8em;
+        height: 36px;
+    }
+    #nav_back.about,#nav_back.project,
+    #nav_back.contact{
+        width: 100%;
+        height: 36px;
+    }
+    #nav_back>ul{
+        width: 96%;
+        height: 20px;
+    }
+    #nav_back>ul>li{
+        width: 32%;
+        height: 30px;
+        margin-right: 5%;
+    }
+    .navborder{
+        top: 7px;
+    }
+    #bubble{
+        left: 1.3%;
+        top: 40px;
+    }
+    #bubble::before{
+        top: -20px;
+        height: 100px;
+    }
+    #bubble.about{
+        width: 55%;
+        height: 70px;
+        font-size: 0.7em;
+    }
+
+    /*skillcontent*/
+
+    .tabcontents{
+        top: 30%;
+        width: 90%;
+        height: 680px;
+        overflow-y: scroll;
+        font-size: 0.7em;
+    }
+    .profilebox{
+        width: 88%;
+        height: 50px;
+        font-size: 1rem;
+    }
+    #skill_content{
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }   
+    #skill_content>ul{
+        width: 100%;
+    }
+    .prog_back{
+        width: 70%;
+    }
+    .prog{
+        height: 25px;
+        font-size: 0.7em;
+    }
+    #skill_edu{
+        flex-flow: column nowrap;
+        overflow-y: scroll;
+        height: 100%;
+    }
+    #skill_edu>ul{
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+    /*프로젝트*/
+    #project{
+        width: 100%;
+        padding: 0;
+    }
+    #project.project{
+        margin-left: 0;
+    }
+    .project_content{
+        width:70%;
+        height: 600px;
+        box-shadow: none;
+        font-size: 1rem;
+    }
+    #left,#right{
+        width: 42px;
+        height: 42px;
+        font-size: 1em;
+    }
+    #left:hover,#right:hover{
+        transform: none;
+        color: #FFD900;
+    }
+    .page_num{
+        top: 16%;
+        left: 45%;
+        font-size: 1.4em;
+    }
+    .moreback{
+        left: 70%;
+        top: 49.8%;
+        width: 30px;
+        height: 30px;
+    }
+    .more{
+        left: 50%;
+        top: 30%;
+        width: 140px;
+        height: 140px;
+        font-size: 1.5em;
+    }
+    .moreicon{
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 1.2em;
+    }
+    .project_sub_title{
+        font-size: 1.3em;
+    }
+    .project_coment{
+        font-size: 1em;
+    }
+    .project_button{
+        margin-top: 30px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .project_button1,
+    .project_button2{
+        width: 25%;
+    }
+    /*컨텐츠 모바일 스몰*/
+    #contact{
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+    }
+    #contact.contact{
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 600px;
+        font-size: 1em;
+    }
+    #contact_header{
+        width: 100%;
+        height: 200px;
+        font-size: 0.8em;
+    }
+    .contact_title{
+        font-size: 2.7em;
+    }
+    #contact_header>span{
+        font-size: 0.85em;
+    }
+    #contact_header>p{
+        font-size: 0.45em;
+    }
+    #contact_header>p:last-child>span{
+        font-size: 0.8em;
+    }
+    
+    #contact_info{
+        left: 5%;
+        top: 200px;
+        width: 80%;
+        font-size: 0.8em;
+        height: 160px;
+        box-shadow: none;
+    }
+    
+    #contact_content{
+        left: 5%;
+        top: 400px;
+        width: 100%;
+        height: auto;
+        font-size: 0.7em;
+    }
+    #contact_list{
+        left: 5%;
+        top: 370px;
+        width: 100%;
+        height: auto;
+        font-size: 0.47em;
+    }
+    #contact_name{
+        left: 0;
+        top: 0;
+    }
+    #contact_email{
+        right: 0;
+        top: 0;
+    }
+    #contact_message{
+        left: 0;
+        top: 80px;
+        height: auto;
+    }
+
+    #namebox{
+        width: 34.33333333333333%;
+        font-size: 0.57em;
+    }
+    #emailbox{
+        width: 68.6%;
+        font-size: 0.57em;
+    }
+    #textbox{
+        width: 90%;
+        height: 90px;
+        font-size: 0.57em;
+    }
+    /* 제출 버튼*/
+    #listbox{
+        top: 99%;
+        left: 13%;
+        min-width: 100px;
+        height: auto;
+        font-size: 0.6em;
+    }
+    #submitbox,
+    #writebox{
+        left: 50%;
+        top: 99%;
+        min-width: 100px;
+        height: auto;
+        font-size: 0.6em;
+    }
+}

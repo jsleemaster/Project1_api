@@ -1,0 +1,344 @@
+@media screen and (min-width : 768px) and (max-width: 1024px){ /*태블릿*/
+   
+   /*main---- 태블릿*/
+   body,html{
+       width: 100%;
+       height: 600px;
+       margin: 0 auto;
+       padding: 0;
+   }
+    #start_back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    #start_main{
+        position: absolute;
+        left: 16%;
+        top: 36%;
+        width: 54%;
+        height: 100%;
+        font-size: 7em;
+    }
+    #main{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 1em;
+    }
+    #mainbackground{
+        position: absolute;
+        left: 30%;
+        top: 30%;
+    }
+    #mainbackground.size{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+    }
+    #imgmain2{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 30%;
+        top: 30%;
+    }
+    #imgmain3{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 30%;
+        top: 30%;
+    }
+    #mainclick{
+        position: absolute;
+        left: -30px;
+        top: -30px;
+        font-size: 2.2em;
+    }
+    
+    #smlee{ 
+        position: absolute;
+        left: 23px;
+        top: 20px;
+        width: 190px;
+        height: 190px;
+    }
+    #smlee.about{
+        width: 150px;
+        height: 150px;
+        left: 700px;
+        top: 50px;
+    }
+    #smlee.project{
+        width: 150px;
+        height: 150px;
+        left: 700px;
+        top: 50px;
+    }
+    #smlee.contact{
+        width: 150px;
+        height: 150px;
+        left: 0;
+        top: 80px;
+    }
+    /* 네비게이션 태블릿*/
+    #navClock{
+        display: none;
+    }
+    #nav_back{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    #nav_back.about,
+    #nav_back.project,
+    #nav_back.contact{
+        width: 100%;
+        height: 45px;
+    }
+    #nav_back>ul{
+        width: 88.359375%;
+        height: 40px;
+        
+    }
+    #nav_back>ul>li {
+        width: 233px;
+    }
+    #nav_back > ul > li > a{
+        font-size:  1.8em;
+
+    }
+/* ------bubble----- 태블릿 -*/
+    #bubble{
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        width: 0;
+        height: 0;
+        transition: all 0.1s;
+    }
+    #bubble.about{
+        width: 580px;
+        height: 30px;
+        font-size: 1.5em;
+        left: 50px;
+        top: 70px;
+    }
+    #bubble.project{
+        width: 360px;
+        height: 30px;
+        font-size: 1.5em;
+        left: 270px;
+        top: 70px;
+    }
+ /*-------------------skillcontent 태블릿*/
+    .tabcontents{
+        display: flex;
+        width: 80%;
+        height: 60%;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        transition: all 0.3s;
+    }
+    .profilebox{
+        left: 30px;
+        top: 120px;
+        width: 50%;
+        height: 100px;
+    }
+    .links{
+        height: 60px;
+        font-size: 2em;
+    }
+    #skill_content{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #skill_content>ul{
+        width: 200px;
+        height: 100%;
+        margin-right: 5px;
+    }
+    #skill_edu>ul{
+        font-size: 1.5rem;
+    }
+    .prog_back{
+        width: 100%;
+        margin-top: 1px;
+    }
+    .prog{
+        height: 30px;
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .skill_title{
+        font-size: 3rem;
+    }
+    .skill_name{
+        font-size:  2rem;
+    }
+    .skillitem4,
+    .skillitem5{
+        margin-top: 45px;
+
+        font-size: 2rem;
+    }
+    /*  프로젝트 컨텐츠 태블릿*/
+    #left,#right{
+        width: 50px;
+        height: 50px;
+    }
+    #project{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    #project.project{
+        font-size: 1em;
+    }
+    .project_content{
+        width: 38.1796875%;
+        height: 600px;
+        font-size: 1.2em;
+        justify-content: center;
+    }
+    .project_content_img{
+        margin: 10px 0;
+    }
+    .moreback{
+        right: 34%;
+        top: 49%;
+        width: 2.4296875%;
+        height: 25px;
+        align-self: center;
+    }
+    .more{
+        right: 16%;
+        top: 27%;
+        height: 130px;
+        font-size: 1.2em;
+    }
+    .project_sub_title{
+        font-size: 1.1em;
+    }
+    .project_coment{
+        font-size: 0.9em;
+    }
+    .page_num{
+        top: 17%;
+    }
+    .project_button1{
+        width: 19.79453125%;
+        font-size: 1em;
+        vertical-align: middle;
+    }
+    .project_button2{    
+        width: 19.79453125%;
+        font-size: 1em;
+        vertical-align: middle;
+    }
+    .project_button1>a{
+        vertical-align: middle;
+    }
+    /* contact 컨텐츠*/
+
+    #contact.contact{
+        position: relative;
+        left: 9.765625%;
+        top: 13%;
+        width: 78.125%;
+        height: 70%;
+    }
+    
+    #contact_header{
+        width: 50%;
+        height: 200px;
+        font-size: 1.4em;
+    }
+    #contact_content{
+        top: 200px;
+        left: 3%;
+        font-size: 1.7em;
+        width: 100%;
+        height: 360px;
+    }
+    #contact_list{
+        top: 200px;
+        left: 3%;
+        font-size: 1.7em;
+        width: 96%;
+        height: 360px;
+    }
+    #contact_list>ul{
+        font-size: 0.8em;
+    }
+    #contact_list>ul:first-child{
+        font-size: 1em;
+        margin-top: 50px;
+    }
+    #contact_name{
+        left: 0;
+        width: 50%;
+        top: 60px;
+        padding: 0;
+    }
+    #contact_email{
+        left: 0;
+        top: 180px;
+        width: 50%;
+        padding: 0;
+    }
+    #contact_message{
+        left: 48%;
+        top: 60px;
+        padding: 0;
+    }
+    #textbox{
+        width: 48.75%;
+        height: 250px;
+    }
+    #namebox{
+        width: 45%;
+    }
+    #emailbox{
+        width: 60%;
+    }
+    #contact_info{
+        width: 45%;
+        height: 170px;
+        left: 50%;
+        top: 30px;
+        font-size: 1.7em;
+    }
+    #listbox{
+        left: 61.5%;
+        top: 79%;
+        font-size: 1em;
+        min-width: 14.55078125%;
+    }
+    #writebox{
+        left: 80.43755%;
+        top: 79%;
+        min-width: 14.55078125%;
+        font-size: 1em;
+    }
+    #submitbox{
+        left: 80.43755%;
+        top: 79%;
+        min-width: 14.55078125%;
+        font-size: 1em;
+    }
+    
+    #contact_info_mobile{
+        display: none;
+    }
+}

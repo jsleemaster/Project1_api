@@ -1,0 +1,76 @@
+#date_name_reserve{
+    width: 100%;
+    height: 700px;
+}
+#date_name_reserve_title{
+    margin: 0 50px 0 50px;
+    padding: 30px;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+#date_name_reserve_title p span{
+    font-weight: bold;
+}
+#date_name_reserve_title p span:last-child{
+    color: red;
+}
+#date_name_reserve_subtitle {
+    margin-top: 20px;
+    padding-left: 50px;
+    text-align: left;
+}
+#date_name_reserve_subtitle ul li h2::before{
+    content: "";
+    border: 2px solid green;
+    background-color: greenyellow;
+}
+#date_name_reserve_subtitle ul li{
+    padding-bottom: 20px;
+    display: block;
+}
+#date_name_reserve_subtitle ul li h4{
+    margin-top: 10px;
+    padding-left: 5px;
+}
+#date_name_reserve ul li input,
+#date_name_reserve ul li select{
+    width: 100px;
+    height: 20px;
+    float: right;
+}
+#reserve ul li select{
+    width: 103px;
+    height: 20px;
+}
+#reserve {
+    text-align: center;
+    border: 2px solid gray;
+    width: 500px;
+    height: 300px;
+    box-shadow: 2px 2px 2px black;
+}
+#reserve ul {
+    margin-top: 30px;
+}
+#reserve ul li{
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+}
+
+#reserve ul li span{
+    font-size: 18px;
+    font-weight: bold;
+    font-family:"Nanum Gothic",Verdana;
+}
+#reserve ul li:last-child{
+    text-align: right;
+    margin-top: 40px;
+}
+#reserve ul li:last-child button{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}

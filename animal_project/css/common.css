@@ -1,0 +1,243 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#wrap{
+    position: relative;
+    width: 1920px;
+    height: 900px;
+}
+/*header*/
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background-color:white;
+    text-align: center;   
+}
+#main_logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background-color:white;
+    text-align: center;
+}
+#main_logo>img{
+    position: absolute;
+    left: 15.41%;/*200px*/
+    width: 150px;
+    height: 150px;
+}
+#search>input{
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid #000000;
+}
+#search{
+    position: absolute;
+    left: 43%;
+    top: 50px;
+}
+#serach_img{
+    position: relative;
+    left: 0;
+    top: 20px;
+    cursor: pointer;
+}
+#login_join{
+    position: absolute;
+    right: 15.41%;
+    top: 50px;
+    width: 300px;
+    height: 60px;
+    float: left;
+}
+#login,#join{
+    float: left;
+    margin-right: 15px;
+}
+#login>img,#join>img{
+    position: relative;
+    top: 19px;
+}
+#login>a,#join>a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#logout{
+    float: right;
+    width: 400px;
+    height: 50px;
+    padding-top: 20px;
+    text-align: right;
+}
+#logout_id{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+#logout_id>span{
+    border-bottom: 1px solid #999;
+}
+#logout_id>span::after{
+    content: "환영합니다!";
+    color: blue;
+    font-size: 0.8em;
+}
+#logout>a{
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: black;
+}
+#logout>a:hover{
+    color: red;
+}
+
+nav{
+    font-family: 'Nanum Gothic', sans-serif;
+    position: absolute;
+    left: 0%;
+    top: 150px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(25,75,104);
+    transition: height 0.5s;
+}
+nav.active{
+    height: 252px;
+}
+nav>ul>li{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav >ul> li> a{
+    display: block;
+    padding: 0 30px;
+    height: 80px;
+    line-height: 68px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.4375em;
+    color: rgb(208,209, 206);
+    border-bottom: 1px solid white;
+}
+nav ul ul {
+    position: absolute;
+    width: 100%;
+    padding-top: 8px;
+    display: block;
+    line-height: 32px;
+    font-size: 1em;
+    color: #C9CCC2;
+}
+nav >ul>li>ul>li{
+    display: block;
+}
+nav >ul>li>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: wheat;
+}
+nav ul ul li a:hover,
+nav ul ul li a:focus{
+    color: wheat;
+}
+
+/*main*/
+
+
+#video{
+    position: absolute;
+    left: 0;
+    top: -70px;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+#main{
+    position: absolute;
+    font-family: 'Noto Serif KR', serif;
+    left: 280px;
+    top: 450px;
+    line-height: 45px;
+    text-align: right;
+}
+#main_title{
+    font-size: 1.875em;
+    font-weight: bold;
+    color: white;
+}
+#main_title span{
+    font-family: 'Shadows Into Light', cursive;
+    color: #FFFF55;
+    font-size: 2em;
+}
+#main_title span.active{
+    transition: color 1s;
+    color:white;
+}
+#sub_title{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.675em;
+    color: white;
+
+}
+footer{
+    position: absolute;
+    top: 900px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255,255,255,0.6);
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width : 1024px){
+    #wrap{
+        width: 100%;
+    }
+    #main_logo{
+        width: 100%;
+        height: 100px;
+    }
+    #main_logo>img{
+        width: 100px;
+        height: 100px;
+    }
+    video{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    #main{
+        position: absolute;
+        left: 30%;
+        top: 10%;
+    }
+    #main_title{
+        font-size: 1rem;
+    }
+    #main_title span{
+        font-size: 1.2em;
+    }
+    #sub_title{
+        font-size: 1rem;
+    }
+    nav{
+        display: none;
+    }   
+}

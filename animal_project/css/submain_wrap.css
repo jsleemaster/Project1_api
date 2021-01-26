@@ -1,0 +1,160 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#wrap{
+    width: 1920px;
+    height: auto;
+    background-color: #def6fa;
+}
+#main{
+    width: 1320px;
+    height: auto;
+    background-color: white;
+}
+#main_logo{
+    width: 100%;
+    height: auto;
+    background-color:white;
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+    color: burlywood;
+    font-size: 18px;
+}
+ul,li{
+    list-style-type: none;
+}
+header nav{
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 100%;
+    z-index: 99;
+    height: 252px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(25,75,104);
+    transition: height 0.3s;
+}
+nav>ul>li{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav >ul> li> a{
+    display: block;
+    padding: 0 40px;
+    height: 80px;
+    line-height: 78px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: gainsboro;
+}
+nav ul ul {
+    position: absolute;
+    width: 100%;
+    padding-top: 8px;
+    display: block;
+    line-height: 32px;
+    font-size: 16px;
+    color: #C9CCC2;
+}
+nav >ul>li>ul>li{
+    display: block;
+}
+nav >ul>li>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: wheat;
+}
+nav ul ul li a:hover,
+nav ul ul li a:focus{
+    color: wheat;
+}
+#title{
+    font-family:"Nanum Gothic",Verdana;
+    line-height: 45px;
+    text-align: left;
+    color: rgb(25,75,104);
+    text-shadow: 1px 1px 1px black;
+    text-align: right;
+    margin: 30px 25px 0 0;
+}
+#main_title{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 28px;
+}
+#main_title span{
+    font-family: 'Shadows Into Light', cursive;
+    color: #8fb9c0;
+
+    font-size: 34px;
+    /* animation: span 2s linear 2; */
+}
+#sub_title{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+}
+#main_content{
+    text-align: center;
+}
+#main_content ul li{
+    display: inline-table;
+}
+#main_content h1{  
+      font-family:"Nanum Gothic",Verdana;
+    text-align: left;
+    color: rgb(25,75,104);
+    margin: 0 0 40px 50px;   
+}
+#map_content{
+    margin-top: 30px;
+    width: 600px;
+    height: 500px;
+}
+#map_content ul{
+    border-bottom: 1px solid #dddddd;
+    padding: 20px 0 20px 0;
+}
+#map_content>ul>li{
+ display: block;
+ text-align: left;
+ padding-top: 10px;
+}
+#map_content a {
+    color: black;
+}
+#green_num{
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-style: outset;
+}
+#map_content .num{
+    border:1px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 14px;
+    margin: 5px;
+}
+#map_content .color_num{
+    background-color: purple;
+    border-style: outset;
+    border-radius: 5px;
+    color: white;
+    padding:3px;
+}
+footer ul{
+    float: right;
+}
+footer ul li{
+    margin-top: 25px;
+    text-align: right;
+    font-size: 12px;

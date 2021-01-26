@@ -1,0 +1,57 @@
+header #main_logo{
+    width: 100%;
+    height: auto;
+    background-color:white;
+    text-align: center;
+}
+header nav{
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 100%;
+    z-index: 99;
+    height: 75px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(25,75,104);
+    transition: height 0.3s;
+}
+nav.active{
+    height: 252px;
+}
+nav>ul>li{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav >ul> li> a{
+    display: block;
+    padding: 0 40px;
+    height: 80px;
+    line-height: 78px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(208,209, 206);
+}
+nav ul ul {
+    position: absolute;
+    width: 100%;
+    padding-top: 8px;
+    display: block;
+    line-height: 32px;
+    font-size: 16px;
+    color: #C9CCC2;
+}
+nav >ul>li>ul>li{
+    display: block;
+}
+nav >ul>li>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: wheat;
+}
+nav ul ul li a:hover,
+nav ul ul li a:focus{
+    color: wheat;
+}
