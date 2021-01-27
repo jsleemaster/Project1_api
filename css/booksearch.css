@@ -1,0 +1,36 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#wrap{
+    width: 66.666666%;
+    height: 100%;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-wrap: row wrap;
+}   
+#main{
+    width: 30%;
+}
+#wrap>header{
+    width: 100%;
+    flex: 1 1 auto;
+    text-align: left;
+}
+#searchtab{
+    width: 100%;
+}
+
+#booklist{
+    width: 100%;
+}
+#booklist>p{
+    width: 25%;
+    
+}
