@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
-
-    <style>
-        .ab{
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/booksearch.css">
 </head> 
 
 <body>
@@ -42,12 +36,11 @@
                 $(".ab > p:nth-child(2)").append("<strong>"+msg.documents[1].title+"</strong>" + "<img src='" + msg.documents[1].thumbnail	 + "' alt='이미지없음'/>");
                 $(".ab > p:nth-child(3)").append("<strong>"+msg.documents[2].title+"</strong>" + "<img src='" + msg.documents[2].thumbnail	 + "' alt='이미지없음'/>");
                 $(".ab > p:nth-child(4)").append("<strong>"+msg.documents[3].title+"</strong>" + "<img src='" + msg.documents[3].thumbnail	 + "' alt='이미지없음'/>");
-                $(".ab>p").preventDefalut();
-
             }); 
         })
        
     </script>
+    <script defer src="./js/booksearch.js"></script>
 </body>
 
 </html>
