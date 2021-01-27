@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+
+    <style>
+        .ab{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head> 
+
+<body>
+    <h1>카카오톡 책찾기</h1>
+    <input id="bookname" type="text">
+    <button id="search">검색</button>
+    <div class="ab">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $("#search").click(function(){
+            $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title", 
+            data: { query : $("#bookname").val(),
+                    page : 5            
+        }, 
+            headers: {Authorization: "KakaoAK 5c0229be21a480889525aaaf6553fb3a"} //REST Api키
+            
+        })
+            .done(function (msg) {
+                console.log(msg);
+                $(".ab > p:nth-child(1)").append("<strong>"+msg.documents[0].title+"</strong>" + "<img src='" + msg.documents[0].thumbnail	 + "' alt='이미지없음'/>");
+                $(".ab > p:nth-child(2)").append("<strong>"+msg.documents[1].title+"</strong>" + "<img src='" + msg.documents[1].thumbnail	 + "' alt='이미지없음'/>");
+                $(".ab > p:nth-child(3)").append("<strong>"+msg.documents[2].title+"</strong>" + "<img src='" + msg.documents[2].thumbnail	 + "' alt='이미지없음'/>");
+                $(".ab > p:nth-child(4)").append("<strong>"+msg.documents[3].title+"</strong>" + "<img src='" + msg.documents[3].thumbnail	 + "' alt='이미지없음'/>");
+                $(".ab>p").preventDefalut();
+
+            }); 
+        })
+       
+    </script>
+</body>
+
+</html>
