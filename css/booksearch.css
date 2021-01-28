@@ -7,21 +7,13 @@ body,html{
     height: 100%;
 }
 #wrap{
-    width: 66.666666%;
+    width: 50.666666%;
     height: 100%;
-    border: 1px solid black;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-wrap: row wrap;
+    
 }   
 #main{
-    width: 30%;
-}
-#wrap>header{
     width: 100%;
-    flex: 1 1 auto;
-    text-align: left;
+    height: 100%;
 }
 #searchtab{
     width: 100%;
@@ -29,8 +21,72 @@ body,html{
 
 #booklist{
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
-#booklist>p{
+.intro_head{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+}
+#book_num,.item-no{
+    width: 10%;
+}
+.item-no{
+    margin-left: 50px;
+    align-self: center;
+    font-size: 1em;
+}
+#book_title,.item-title{
+    width: 50%;
+    align-self: center;
+    border-right: 1px solid black;
+}
+.item-title{
+    font-size: 1em;
+    height: 130px;
+    border: 1px solid black;
+}
+#book_img,.item-img{
     width: 25%;
-    
+}
+.item-img{
+    align-self: center;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+.item-img>img{
+    height: 130px;
+}
+#book_url,.item-url{
+    width: 20%;
+    align-self: center;
+}
+.list{
+    width: 100%;
+}
+.item{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+}
+.paging{
+    text-align: center;
+}
+.paging>a {
+    margin: 10px;
+}
+.paging >a.prev{
+    color: red;
+}
+.paging>a.current{
+    font-weight: bold;
+}
+.paging>a.next{
+    color: gray;
 }
