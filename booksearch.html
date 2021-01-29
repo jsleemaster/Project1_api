@@ -7,21 +7,36 @@
     <title>API</title>
     <link rel="stylesheet" href="./css/booksearch.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+        @font-face {
+            font-family: 'Typo_SsangmunDongB';        
+                src: local('Typo_SsangmunDongB'),
+                url('Typo_SsangmunDongB.ttf')
+        }
+    </style>
 </head>
 
 <body>
     <div id="wrap">
-        <div id="main">
+        <div id="main" style="background-image: url(/marjanblan-794QUz5-cso-unsplash.jpg);">
             <section id="searchtab">
-                <h1>책 찾기</h1>
+                <aside>
+                    <img src="./images/searchbook.gif" alt="책 찾습니다" id="searchbook">
+                    <img src="./images/standing_board.gif" alt="간판" id="standing_board">
+                </aside>
+
+                <div id="logo">  
+                    <a href="booksearch.html"><img src="./images/logo.png" alt="로고"></a>
+                </div>
                 <p>원하시는 책을 검색해보세요!</p>
                 <input id="bookname" type="text">
-                <button type="button"id="search">검색</button>
+                <button type="button" id="search">검색</button>
                 <p id="search_result_none"></p>
             </section>
             <section id="booklist">
                 <div class="intro_head">
-                    <div id="book_num">책 번호</div>
+                    <div id="book_num">번호</div>
                     <div id="book_title">책 제목</div>
                     <div id="book_img">책 표지</div>
                     <div id="book_url">상세 내용</div>
@@ -38,117 +53,11 @@
                 </div>
             </section>
             <section class="paging">
-
             </section>
+            
         </div>
-
     </div>
-  
-    <script>
-        $("#bookname").focus();
-        $("#booklist").hide();
-        $("#search").click(function () {
-            var searchKeyword = $("#bookname").val();
-            search(1, null, searchKeyword);
-            $("#booklist").show();
-        });
-        $("#bookname").keyup(function (e) {
-             if (e.keyCode == 13) {
-                $("#search").trigger('click');
-             }
-            });
-        function search(page, perPage, searchKeyword) {
-
-            if (typeof page !== 'number' || page < 1) {
-                page = 1;
-            }
-            if (typeof perPage !== 'number' || perPage <= 0) {
-                perPage = 10;
-            }
-            $.ajax({
-                method: "GET",
-                url: "https://dapi.kakao.com/v3/search/book?target=title",
-                data: {
-                    query: searchKeyword,
-                    page: page,
-                    size: perPage,
-                },
-                headers: { Authorization: "KakaoAK 5c0229be21a480889525aaaf6553fb3a" }
-            })
-                .done(function (msg) {
-                    var list = msg.documents;
-                    var total = msg.meta.pageable_count;
-                    console.log(total);
-                    if (total === 0) {
-                        $("#search_result_none").empty().append("검색하신 '" + searchKeyword + "'(이)가 없습니다.");
-                        $('.list,.paging').empty();
-                        $("#booklist").hide();
-                    }
-                    else {
-                        $("#search_result_none").empty();
-                        var $list = $('.list').empty();
-                        for (var i = 0; i < list.length; i++) {
-                            var item = list[i];
-
-                            var $elem = $("#template").clone().removeAttr('id');
-
-                            var no = (page - 1) * perPage + i + 1;
-
-                            $elem.find('.item-no').html(no);
-                            $elem.find('.item-title').html(item.title);
-                            $elem.find('.item-img').html("<img src='" + item.thumbnail + "' alt='이미지없음'/>");
-                            $elem.find('.item-url').html("<a href='" + item.url + "' target='_blank'>더 보기</a>");
-
-                            $list.append($elem);
-                        }
-                        showPaging(page, perPage, total, searchKeyword);
-                    }
-
-                });
-        }
-        function showPaging(page, perPage, total, searchKeyword) {
-            var $paging = $('.paging').empty();
-            var numPages = 5;
-            var pageStart = Math.floor((page - 1) / numPages) * numPages + 1;
-            var pageEnd = pageStart + numPages - 1;
-            var totalPages = Math.floor(total / perPage) + 1;
-            if (pageEnd > totalPages)
-                pageEnd = totalPages;
-
-            var prevPage = pageStart - 1;
-
-            if (prevPage < 1)
-                prevPage = 1;
-
-            var nextPage = pageEnd + 1;
-
-            if (nextPage > totalPages)
-                nextPage = totalPages;
-
-
-            var $prevElem = $('<a href="javascript:search(' + prevPage + ',' + perPage + ',\'' + searchKeyword + '\')">이전</a>');
-            $prevElem.addClass('prev');
-            $paging.append($prevElem);
-
-            for (var i = pageStart; i <= pageEnd; i++) {
-                var $elem = $('<a href="javascript:search(' + i + ',' + perPage + ',\'' + searchKeyword + '\')">' + i + '</a>');
-
-                if (i === page) {
-                    $elem.addClass('current');
-                }
-
-                $paging.append($elem);
-            }
-
-            var $nextElem = $('<a href="javascript:search(' + nextPage + ',' + perPage + ',\'' + searchKeyword + '\')">다음</a>');
-            $nextElem.addClass('next');
-            $paging.append($nextElem);
-
-        }
-
-
-    </script>
-    <script defer src="./js/booksearch.js"></script>
+  <script defer src="./js/booksearch.js"></script>
 </body>
 
 </html>
