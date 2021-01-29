@@ -105,6 +105,10 @@ body,html{
     align-self: center;
     text-align: center;
 }
+.item-url>a{
+    text-decoration: none;
+    color: blue;
+}
 .list{
     width: 100%;
 }
